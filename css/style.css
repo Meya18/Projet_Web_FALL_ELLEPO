@@ -1,0 +1,169 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8fbff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: white;
+    border-bottom: 1px solid #e6eef7;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #0057b8; /* bleu EFREI */
+    margin-bottom: 10px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0057b8;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background: #0057b8;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+#hero {
+    background: linear-gradient(135deg, #0057b8, #00aaff);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* APROPOS */
+#apropos {
+    background: white;
+}
+
+#apropos a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0057b8;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#apropos a:hover {
+    background: #003f8a;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 87, 184, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 87, 184, 0.2);
+}
+
+.card h3 {
+    color: #0057b8;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0057b8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: #0057b8;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
