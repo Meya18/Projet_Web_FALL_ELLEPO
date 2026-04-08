@@ -11,7 +11,7 @@
     <!-- HEADER -->
     <header>
         <h1>Département Informatique EFREI</h1>
-        <nav>
+        <nav aria-label="Navigation principale">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="html/formations.html">Formations</a></li>
@@ -23,7 +23,7 @@
     </header>
 
     <!-- CONTENU PRINCIPAL -->
-    <main>
+    <main role="main">
 
         <!-- Section héro -->
         <section id="hero">
@@ -35,37 +35,44 @@
         <section id="apropos">
             <h2>À propos de nous</h2>
             <p>Découvrez l'histoire et la mission de notre département.</p>
-            <a href="html/contact.html">En savoir plus</a>
+            <a href="html/contact.html" class="btn">En savoir plus</a>
         </section>
 
         <!-- Section Nos pages -->
         <section id="sections">
             <h2>Nos sections</h2>
+
             <div class="cards">
-                <div class="card">
+                <article class="card">
                     <h3>Formations</h3>
                     <p>Explorez nos cours et spécialisations.</p>
                     <a href="html/formations.html">Voir les formations</a>
-                </div>
-                <div class="card">
+                </article>
+
+                <article class="card">
                     <h3>Équipe enseignante</h3>
                     <p>Découvrez nos professeurs.</p>
                     <a href="html/equipe.html">Voir l'équipe</a>
-                </div>
-                <div class="card">
+                </article>
+
+                <article class="card">
                     <h3>Vie du département</h3>
                     <p>Actualités et événements.</p>
                     <a href="html/vie.html">En savoir plus</a>
-                </div>
+                </article>
             </div>
+
         </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <nav>
+        <nav aria-label="Navigation secondaire">
             <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="html/formations.html">Formations</a></li>
+                <li><a href="html/equipe.html">Équipe</a></li>
                 <li><a href="html/contact.html">À propos</a></li>
             </ul>
         </nav>

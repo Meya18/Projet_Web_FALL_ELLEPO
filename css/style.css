@@ -167,3 +167,17 @@ footer a:hover {
         font-size: 2rem;
     }
 }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0057b8;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #003f8a;
+}
