@@ -11,8 +11,9 @@
     <!-- HEADER -->
     <header>
         <h1>Département Informatique EFREI</h1>
+        <button id="menu-toggle">☰</button>
         <nav aria-label="Navigation principale">
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="html/formations.html">Formations</a></li>
                 <li><a href="html/equipe.html">Équipe</a></li>
@@ -31,6 +32,33 @@
             <p>Découvrez nos formations, notre équipe et la vie de notre département.</p>
         </section>
 
+        <!-- Carrousel -->
+        <section id="carrousel">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <h3>Bienvenue au département Informatique</h3>
+                        <p>Une formation d'excellence au coeur du numérique.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <h3>Nos formations</h3>
+                        <p>Des cursus adaptés aux métiers de demain.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <h3>Une équipe passionnée</h3>
+                        <p>Des enseignants experts dans leur domaine.</p>
+                    </div>
+                </div>
+                <button class="carousel-btn" id="prev">&#10094;</button>
+                <button class="carousel-btn" id="next">&#10095;</button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
         <!-- Section À propos -->
         <section id="apropos">
             <h2>À propos de nous</h2>
@@ -41,27 +69,23 @@
         <!-- Section Nos pages -->
         <section id="sections">
             <h2>Nos sections</h2>
-
             <div class="cards">
                 <article class="card">
                     <h3>Formations</h3>
                     <p>Explorez nos cours et spécialisations.</p>
                     <a href="html/formations.html">Voir les formations</a>
                 </article>
-
                 <article class="card">
                     <h3>Équipe enseignante</h3>
                     <p>Découvrez nos professeurs.</p>
                     <a href="html/equipe.html">Voir l'équipe</a>
                 </article>
-
                 <article class="card">
                     <h3>Vie du département</h3>
                     <p>Actualités et événements.</p>
                     <a href="html/vie.html">En savoir plus</a>
                 </article>
             </div>
-
         </section>
 
     </main>
