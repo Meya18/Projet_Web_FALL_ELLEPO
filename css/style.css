@@ -321,3 +321,47 @@ footer a:hover {
         max-width: 340px;
     }
 }
+/*CSS
+/* TABLEAU */
+#matieres {
+    background: white;
+}
+
+#matieres h2 {
+    margin-bottom: 30px;
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #0057b8;
+    color: white;
+}
+
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e6eef7;
+}
+
+tbody tr:hover {
+    background: #e8f1fb;
+}
+
+/* LISTE FORMATIONS */
+#liste-formations {
+    background: #f8fbff;
+}
+
+#liste-formations h2 {
+    margin-bottom: 10px;
+}
