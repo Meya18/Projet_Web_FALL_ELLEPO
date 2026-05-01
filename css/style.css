@@ -140,7 +140,7 @@ section {
 .card {
     background: white;
     border-radius: 15px;
-    width: 280px;
+    width: 380px;
     box-shadow: 0 8px 20px rgba(0, 87, 184, 0.1);
     transition: 0.3s;
     overflow: hidden;
@@ -148,7 +148,7 @@ section {
 
 .card img {
     width: 100%;
-    height: 180px;
+    height: 260px;
     object-fit: cover;
 }
 
