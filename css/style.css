@@ -24,6 +24,10 @@ header {
 #logo {
     height: 60px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+header a:has(#logo) {
+    display: inline-block;
 }
 
 header h1 {
