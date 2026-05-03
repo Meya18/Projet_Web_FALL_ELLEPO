@@ -385,3 +385,77 @@ tbody tr:hover {
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
+/* CONTACT */
+#contact {
+    background: white;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#formulaire {
+    flex: 1;
+    min-width: 300px;
+}
+
+#infos-contact {
+    min-width: 200px;
+    padding-top: 10px;
+}
+
+#infos-contact h3 {
+    color: #0057b8;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #0057b8;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e6eef7;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0057b8;
+}
+
+#form-message {
+    margin-top: 15px;
+    font-weight: 600;
+    color: green;
+}
+
+/* A PROPOS EQUIPE */
+#apropos-equipe {
+    background: #f8fbff;
+}
+
+#apropos-equipe p {
+    margin-bottom: 30px;
+}

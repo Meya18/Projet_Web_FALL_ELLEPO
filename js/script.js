@@ -27,3 +27,23 @@ dots.forEach((dot, i) => {
 
 // Défilement automatique toutes les 4 secondes
 setInterval(() => goTo(current + 1), 4000);
+// Validation formulaire
+const form = document.getElementById('contact-form');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nom = document.getElementById('nom').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const formMessage = document.getElementById('form-message');
+
+        if (nom === '' || email === '' || message === '') {
+            formMessage.style.color = 'red';
+            formMessage.textContent = 'Veuillez remplir tous les champs obligatoires.';
+        } else {
+            formMessage.style.color = 'green';
+            formMessage.textContent = 'Message envoyé avec succès ! Nous vous répondrons bientôt.';
+            form.reset();
+        }
+    });
+}
