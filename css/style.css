@@ -986,3 +986,8 @@ tbody tr:hover {
         flex-direction: column;
     }
 }
+/* CARD ICON */
+.card-icon {
+    font-size: 3rem;
+    margin: 25px auto 15px;
+}
