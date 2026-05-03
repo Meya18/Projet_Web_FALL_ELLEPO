@@ -10,9 +10,14 @@
 
     <!-- HEADER -->
     <header>
-        <a href="index.html"><img src="images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo"></a>
+        <a href="index.html">
+            <img src="images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo">
+        </a>
+
         <h1>Département Informatique</h1>
-        <button id="menu-toggle">☰</button>
+
+        <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
         <nav aria-label="Navigation principale">
             <ul id="nav-menu">
                 <li><a href="html/formations.html">Formations</a></li>
@@ -23,10 +28,10 @@
         </nav>
     </header>
 
-    <!-- CONTENU PRINCIPAL -->
-    <main role="main">
+    <!-- MAIN -->
+    <main>
 
-        <!-- Section héro -->
+        <!-- HERO -->
         <section id="hero">
             <img src="images/campus_efrei.jpg" alt="Campus EFREI" id="hero-img">
             <div id="hero-content">
@@ -36,78 +41,90 @@
             </div>
         </section>
 
-        <!-- Carrousel -->
+        <!-- CARROUSEL -->
         <section id="carrousel">
             <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="carousel-slide active">
-                        <h3>Bienvenue au département Informatique</h3>
-                        <p>Une formation d'excellence au coeur du numérique.</p>
-                    </div>
-                    <div class="carousel-slide">
-                        <h3>Nos formations</h3>
-                        <p>Des cursus adaptés aux métiers de demain.</p>
-                    </div>
-                    <div class="carousel-slide">
-                        <h3>Une équipe passionnée</h3>
-                        <p>Des enseignants experts dans leur domaine.</p>
-                    </div>
+
+                <div class="carousel-slide active">
+                    <h3>Bienvenue au département Informatique</h3>
+                    <p>Une formation d'excellence au cœur du numérique.</p>
                 </div>
-                <button class="carousel-btn" id="prev">&#10094;</button>
-                <button class="carousel-btn" id="next">&#10095;</button>
+
+                <div class="carousel-slide">
+                    <h3>Nos formations</h3>
+                    <p>Des cursus adaptés aux métiers de demain.</p>
+                </div>
+
+                <div class="carousel-slide">
+                    <h3>Une équipe passionnée</h3>
+                    <p>Des enseignants experts dans leur domaine.</p>
+                </div>
+
+                <button class="carousel-btn" id="prev" aria-label="Précédent">&#10094;</button>
+                <button class="carousel-btn" id="next" aria-label="Suivant">&#10095;</button>
+
                 <div class="carousel-dots">
                     <span class="dot active"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
+
             </div>
         </section>
 
-        <!-- Section À propos -->
+        <!-- À PROPOS -->
         <section id="apropos">
             <h2>À propos de nous</h2>
-            <p>Le département Informatique de l'EFREI forme depuis plus de 30 ans les ingénieurs du numérique de demain. Alliant excellence académique et proximité avec le monde professionnel, nous proposons des formations innovantes adaptées aux enjeux actuels.</p>
+            <p>
+                Le département Informatique de l'EFREI forme depuis plus de 30 ans les ingénieurs du numérique de demain.
+                Alliant excellence académique et proximité avec le monde professionnel, nous proposons des formations innovantes adaptées aux enjeux actuels.
+            </p>
             <a href="html/contact.html" class="btn">En savoir plus</a>
         </section>
 
-        <!-- Section Nos pages -->
+        <!-- SECTIONS -->
         <section id="sections">
             <div class="cards">
+
                 <article class="card">
                     <img src="images/profencoursefrei-1623x1080.jpg" alt="Formations EFREI">
                     <h3>Formations</h3>
                     <p>Explorez nos cours et spécialisations.</p>
                     <a href="html/formations.html">Voir les formations</a>
                 </article>
+
                 <article class="card">
                     <img src="images/efrei-direction.jpg" alt="Équipe enseignante EFREI">
                     <h3>Équipe enseignante</h3>
                     <p>Découvrez nos professeurs.</p>
                     <a href="html/equipe.html">Voir l'équipe</a>
                 </article>
+
                 <article class="card">
                     <img src="images/etudiants.jpg" alt="Étudiants EFREI">
                     <h3>Vie du département</h3>
                     <p>Actualités et événements.</p>
                     <a href="html/vie.html">En savoir plus</a>
                 </article>
+
             </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <nav aria-label="Navigation secondaire">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="html/formations.html">Formations</a></li>
-                <li><a href="html/equipe.html">Équipe</a></li>
-                <li><a href="html/contact.html">À propos</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2026 Département Informatique EFREI</p>
-    </footer>
+   <footer>
+    <nav aria-label="Navigation secondaire">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="html/formations.html">Formations</a></li>
+            <li><a href="html/equipe.html">Équipe</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+            <li><a href="html/contact.html#apropos-equipe">À propos</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2026 Département Informatique EFREI</p>
+</footer>
 
     <script src="js/script.js"></script>
 </body>

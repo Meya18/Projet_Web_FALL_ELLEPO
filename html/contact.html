@@ -10,83 +10,63 @@
 
     <!-- HEADER -->
     <header>
-        <img src="../images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo">
+        <a href="../index.html">
+            <img src="../images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo">
+        </a>
         <h1>Département Informatique</h1>
-        <button id="menu-toggle">☰</button>
+
+        <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
         <nav aria-label="Navigation principale">
             <ul id="nav-menu">
-                <li><a href="../index.html">Accueil</a></li>
                 <li><a href="formations.html">Formations</a></li>
                 <li><a href="equipe.html">Équipe</a></li>
                 <li><a href="vie.html">Vie du département</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- CONTENU PRINCIPAL -->
-    <main role="main">
+    <!-- MAIN -->
+    <main>
 
-        <!-- Section héro -->
+        <!-- HERO -->
         <section id="hero">
             <img src="../images/campus_efrei.jpg" alt="Campus EFREI" id="hero-img">
             <div id="hero-content">
-                <h2>Contact & À propos</h2>
-                <p>Contactez-nous ou découvrez l'équipe derrière ce projet.</p>
+                <h2>Contactez-nous</h2>
+                <p>Une question ? Besoin d'informations ? Notre équipe est là pour vous répondre.</p>
             </div>
         </section>
 
-        <!-- Section contact -->
+        <!-- FORMULAIRE -->
         <section id="contact">
-            <h2>Nous contacter</h2>
-            <div id="contact-container">
+            <h2>Envoyer un message</h2>
 
-                <!-- Formulaire -->
-                <div id="formulaire">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="nom">Nom complet</label>
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Votre email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="sujet">Sujet</label>
-                            <select id="sujet" name="sujet">
-                                <option value="">-- Choisissez un sujet --</option>
-                                <option value="formations">Formations</option>
-                                <option value="equipe">Équipe enseignante</option>
-                                <option value="stage">Stage / Alternance</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Envoyer</button>
-                        <p id="form-message"></p>
-                    </form>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
                 </div>
-
-                <!-- Infos contact -->
-                <div id="infos-contact">
-                    <h3>Nos coordonnées</h3>
-                    <p>30-32 Avenue de la République</p>
-                    <p>94800 Villejuif, France</p>
-                    <br>
-                    <p>Email : info@efrei.fr</p>
-                    <p>Tél : +33 (0)1 46 77 46 00</p>
-                    <br>
-                    <p>Lundi - Vendredi : 9h - 18h</p>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
 
-            </div>
+            <p id="form-message" style="margin-top:15px;"></p>
         </section>
 
-        <!-- Section à propos -->
+        <!-- À PROPOS -->
         <section id="apropos-equipe">
             <h2>À propos de ce projet</h2>
             <p>Ce site a été réalisé dans le cadre du projet TI402 par des étudiantes en 2ème année de prépa à l'EFREI :</p>
@@ -115,12 +95,14 @@
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="formations.html">Formations</a></li>
                 <li><a href="equipe.html">Équipe</a></li>
-                <li><a href="contact.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#apropos-equipe">À propos</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 Département Informatique EFREI</p>
     </footer>
 
     <script src="../js/script.js"></script>
+
 </body>
 </html>

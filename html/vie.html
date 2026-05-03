@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vie du département - Département Informatique EFREI</title>
+    <title>Vie du département - EFREI Informatique</title>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/vie.css">
 </head>
 <body>
 
-    <!-- POP-UP BIENVENUE -->
+    <!-- POPUP -->
     <div id="popup-overlay">
         <div id="popup">
-            <button id="popup-close">&times;</button>
+            <button id="popup-close" aria-label="Fermer">&times;</button>
+
             <div class="popup-icon">🎉</div>
+
             <h2>Bienvenue !</h2>
-            <p>Découvrez la vie du département Informatique de l'EFREI : événements, actualités et bien plus encore.</p>
+            <p>
+                Découvrez la vie du département Informatique de l'EFREI :
+                événements, actualités et projets étudiants.
+            </p>
+
             <button class="btn" id="popup-btn">Explorer</button>
         </div>
     </div>
 
     <!-- HEADER -->
     <header>
-        <a href="../index.html"><img src="../images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo"></a>
+        <a href="../index.html">
+            <img src="../images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo">
+        </a>
+
         <h1>Département Informatique</h1>
-        <button id="menu-toggle">☰</button>
+
+        <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
         <nav aria-label="Navigation principale">
             <ul id="nav-menu">
                 <li><a href="formations.html">Formations</a></li>
@@ -45,32 +57,39 @@
             </div>
         </section>
 
-        <!-- COMPTEURS ANIMÉS -->
+        <!-- COMPTEURS -->
         <section id="compteurs">
             <div class="compteur-grid">
+
                 <div class="compteur-item">
                     <span class="compteur-nombre" data-target="1500">0</span>
                     <span class="compteur-label">Étudiants</span>
                 </div>
+
                 <div class="compteur-item">
                     <span class="compteur-nombre" data-target="50">0</span>
                     <span class="compteur-label">Professeurs</span>
                 </div>
+
                 <div class="compteur-item">
                     <span class="compteur-nombre" data-target="30">0</span>
-                    <span class="compteur-label">Ans d'histoire</span>
+                    <span class="compteur-label">Années</span>
                 </div>
+
                 <div class="compteur-item">
                     <span class="compteur-nombre" data-target="95">0</span>
-                    <span class="compteur-label">% d'insertion pro</span>
+                    <span class="compteur-label">Insertion pro %</span>
                 </div>
+
             </div>
         </section>
 
-        <!-- ÉVÉNEMENTS -->
+        <!-- EVENEMENTS -->
         <section id="evenements">
             <h2>Événements à venir</h2>
+
             <div class="events-grid">
+
                 <article class="event-card">
                     <div class="event-date">
                         <span class="event-day">15</span>
@@ -78,10 +97,11 @@
                     </div>
                     <div class="event-info">
                         <h3>Hackathon EFREI 2026</h3>
-                        <p>48h de code en équipe pour résoudre des défis réels proposés par des entreprises partenaires.</p>
+                        <p>48h de développement en équipe sur des problématiques réelles d’entreprises.</p>
                         <span class="event-tag">Compétition</span>
                     </div>
                 </article>
+
                 <article class="event-card">
                     <div class="event-date">
                         <span class="event-day">22</span>
@@ -89,10 +109,11 @@
                     </div>
                     <div class="event-info">
                         <h3>Journée Portes Ouvertes</h3>
-                        <p>Venez découvrir nos formations, rencontrer les équipes et visiter le campus de Villejuif.</p>
+                        <p>Découverte du campus, des formations et des projets étudiants.</p>
                         <span class="event-tag">Campus</span>
                     </div>
                 </article>
+
                 <article class="event-card">
                     <div class="event-date">
                         <span class="event-day">05</span>
@@ -100,10 +121,11 @@
                     </div>
                     <div class="event-info">
                         <h3>Conférence IA & Métiers</h3>
-                        <p>Des intervenants du monde professionnel présentent les usages de l'IA dans leurs secteurs.</p>
+                        <p>Interventions de professionnels sur l’intelligence artificielle.</p>
                         <span class="event-tag">Conférence</span>
                     </div>
                 </article>
+
                 <article class="event-card">
                     <div class="event-date">
                         <span class="event-day">18</span>
@@ -111,26 +133,32 @@
                     </div>
                     <div class="event-info">
                         <h3>Remise des diplômes</h3>
-                        <p>Cérémonie de remise des diplômes pour la promotion 2026 du département informatique.</p>
+                        <p>Cérémonie officielle de la promotion 2026.</p>
                         <span class="event-tag">Cérémonie</span>
                     </div>
                 </article>
+
             </div>
         </section>
 
         <!-- QUIZ -->
         <section id="quiz-section">
             <h2>Quiz — Connais-tu l'EFREI ?</h2>
-            <p class="quiz-subtitle">Teste tes connaissances sur le département Informatique !</p>
+            <p class="quiz-subtitle">Teste tes connaissances sur le département</p>
+
             <div id="quiz-container">
+
                 <div id="quiz-progress">
                     <div id="quiz-progress-bar"></div>
                 </div>
+
                 <p id="quiz-question-num">Question 1 / 5</p>
+
                 <div id="quiz-question-box">
                     <p id="quiz-question"></p>
                     <div id="quiz-options"></div>
                 </div>
+
                 <div id="quiz-result" style="display:none;">
                     <div class="result-icon" id="result-icon"></div>
                     <h3 id="result-titre"></h3>
@@ -138,47 +166,57 @@
                     <p id="result-message"></p>
                     <button class="btn" id="quiz-restart">Rejouer</button>
                 </div>
+
             </div>
         </section>
 
         <!-- GALERIE -->
         <section id="galerie">
             <h2>Galerie photos</h2>
+
             <div class="galerie-grid">
+
                 <div class="galerie-item grand">
                     <img src="../images/profencoursefrei-1623x1080.jpg" alt="Cours EFREI">
-                    <div class="galerie-overlay"><span>Amphi en plein cours</span></div>
+                    <div class="galerie-overlay"><span>Cours en amphi</span></div>
                 </div>
+
                 <div class="galerie-item">
                     <img src="../images/efrei-direction.jpg" alt="Équipe EFREI">
-                    <div class="galerie-overlay"><span>Notre équipe</span></div>
+                    <div class="galerie-overlay"><span>Équipe pédagogique</span></div>
                 </div>
+
                 <div class="galerie-item">
                     <img src="../images/etudiants.jpg" alt="Étudiants EFREI">
                     <div class="galerie-overlay"><span>Vie étudiante</span></div>
                 </div>
+
                 <div class="galerie-item">
                     <img src="../images/campus_efrei.jpg" alt="Campus EFREI">
-                    <div class="galerie-overlay"><span>Le campus</span></div>
+                    <div class="galerie-overlay"><span>Campus</span></div>
                 </div>
+
             </div>
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <nav aria-label="Navigation secondaire">
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="formations.html">Formations</a></li>
-                <li><a href="equipe.html">Équipe</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2026 Département Informatique EFREI</p>
-    </footer>
+    <nav aria-label="Navigation secondaire">
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#apropos-equipe">À propos</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2026 Département Informatique EFREI</p>
+</footer>
 
     <script src="../js/script.js"></script>
     <script src="../js/vie.js"></script>
+
 </body>
 </html>
