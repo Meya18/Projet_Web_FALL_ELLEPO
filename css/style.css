@@ -1177,7 +1177,7 @@ tbody tr:hover {
     margin-bottom: 15px;
 }
 
-.coord-card h4 {
+.coord-card h3 {
     color: #0057b8;
     font-size: 1rem;
     margin-bottom: 10px;
@@ -1200,4 +1200,12 @@ tbody tr:hover {
     color: #0057b8;
     font-size: 2rem;
     margin-bottom: 35px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
 }
