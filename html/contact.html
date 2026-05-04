@@ -14,9 +14,7 @@
             <img src="../images/logo_efrei_web_bleu-1024x334.png" alt="Logo EFREI" id="logo">
         </a>
         <h1>Département Informatique</h1>
-
         <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-
         <nav aria-label="Navigation principale">
             <ul id="nav-menu">
                 <li><a href="formations.html">Formations</a></li>
@@ -39,31 +37,73 @@
             </div>
         </section>
 
+        <!-- COORDONNÉES -->
+        <section id="coordonnees">
+            <h2>Nos coordonnées</h2>
+            <div class="coord-grid">
+                <div class="coord-card">
+                    <div class="coord-icon">📍</div>
+                    <h4>Adresse</h4>
+                    <p>30-32 Avenue de la République</p>
+                    <p>94800 Villejuif, France</p>
+                </div>
+                <div class="coord-card">
+                    <div class="coord-icon">📞</div>
+                    <h4>Téléphone</h4>
+                    <p>+33 (0)1 46 77 46 00</p>
+                    <p>info@efrei.fr</p>
+                </div>
+                <div class="coord-card">
+                    <div class="coord-icon">🕐</div>
+                    <h4>Horaires</h4>
+                    <p>Lundi - Vendredi</p>
+                    <p>9h00 - 18h00</p>
+                </div>
+            </div>
+        </section>
+
         <!-- FORMULAIRE -->
         <section id="contact">
             <h2>Envoyer un message</h2>
+            <div id="formulaire">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sujet">Sujet</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Votre sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+                <p id="form-message" style="margin-top:15px;"></p>
+            </div>
+        </section>
 
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="sujet">Sujet</label>
-                    <input type="text" id="sujet" name="sujet" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
-
-            <p id="form-message" style="margin-top:15px;"></p>
+        <!-- CARTE GOOGLE MAPS -->
+        <section id="map">
+            <h2>Nous trouver</h2>
+            <div id="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.9!2d2.3634!3d48.7897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d8b6e6e6e6e7%3A0x0!2sEFREI%20Paris%20-%20Grande%20%C3%A9cole%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr"
+                    width="100%"
+                    height="400"
+                    style="border:0; border-radius: 15px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localisation EFREI">
+                </iframe>
+            </div>
         </section>
 
         <!-- À PROPOS -->
@@ -81,7 +121,7 @@
                     <img src="https://ui-avatars.com/api/?name=Lindsay+Ellepo&background=0057b8&color=fff&size=200" alt="Lindsay Ellepo">
                     <h3>Lindsay Ellepo</h3>
                     <p class="role">Étudiante en 2ème année de prépa</p>
-                    <p>EFREI Paris — Promotion 2029</p>
+                    <p>EFREI Paris — Promotion 2026</p>
                 </article>
             </div>
         </section>

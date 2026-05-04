@@ -1020,3 +1020,184 @@ tbody tr:hover {
     font-size: 3rem;
     margin: 25px auto 15px;
 }
+/* CONTACT PAGE */
+#contact {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    color: #0057b8;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 87, 184, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #0057b8;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e6eef7;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: 0.3s;
+    background: #f8fbff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0057b8;
+    background: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact-form .btn {
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+#form-message {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* APROPOS EQUIPE */
+#apropos-equipe {
+    background: #f8fbff;
+}
+
+#apropos-equipe p {
+    margin-bottom: 10px;
+    color: #555;
+}
+/* MAP */
+#map {
+    background: #f8fbff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#map h2 {
+    color: #0057b8;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#map-container {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 8px 30px rgba(0, 87, 184, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* CONTACT CONTAINER */
+#contact-container {
+    display: flex;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+#formulaire {
+    flex: 2;
+    min-width: 300px;
+}
+
+#infos-contact {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#infos-contact h3 {
+    color: #0057b8;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.coord-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coord-card {
+    background: #f0f6ff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    max-width: 250px;
+    border-top: 4px solid #0057b8;
+    transition: 0.3s;
+}
+
+.coord-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 87, 184, 0.15);
+}
+
+.coord-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.coord-card h4 {
+    color: #0057b8;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.coord-card p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+/* COORDONNEES */
+#coordonnees {
+    background: white;
+    padding: 60px 20px;
+}
+
+#coordonnees h2 {
+    color: #0057b8;
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
