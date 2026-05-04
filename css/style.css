@@ -1,11 +1,12 @@
-/* RESET */
+/* ================================
+   RESET & GLOBAL
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* GLOBAL */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f8fbff;
@@ -13,7 +14,9 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* ================================
+   HEADER & NAV
+================================ */
 header {
     background: white;
     border-bottom: 2px solid #e6eef7;
@@ -41,7 +44,6 @@ header h1 {
     text-align: center;
 }
 
-/* NAV */
 nav ul {
     list-style: none;
     display: flex;
@@ -71,7 +73,11 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* BURGER */
+.nav-active {
+    border-bottom: 2px solid #0057b8;
+    padding-bottom: 3px;
+}
+
 #menu-toggle {
     display: none;
     font-size: 28px;
@@ -81,66 +87,9 @@ nav a:hover::after {
     color: #0057b8;
 }
 
-/* RESPONSIVE HEADER */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 20px;
-    }
-
-    header h1 {
-        font-size: 1.2rem;
-    }
-
-    #menu-toggle {
-        display: block;
-    }
-
-    #nav-menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    #nav-menu.active {
-        display: flex;
-    }
-}
-
-/* NAV */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #0057b8;
-    font-weight: 600;
-    position: relative;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -3px;
-    left: 0;
-    background: #0057b8;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* HERO */
+/* ================================
+   HERO
+================================ */
 #hero {
     position: relative;
     text-align: center;
@@ -188,23 +137,14 @@ nav a:hover::after {
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
-/* SECTIONS */
+/* ================================
+   SECTIONS & BTN
+================================ */
 section {
     padding: 60px 20px;
     text-align: center;
 }
 
-/* APROPOS */
-#apropos {
-    background: white;
-}
-
-#apropos p {
-    max-width: 700px;
-    margin: 0 auto 20px;
-}
-
-/* BTN */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -220,7 +160,76 @@ section {
     background: #003f8a;
 }
 
-/* CARDS */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+}
+
+/* ================================
+   À PROPOS (INDEX)
+================================ */
+#apropos {
+    background: white;
+}
+
+#apropos p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+#apropos-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#apropos-texte {
+    flex: 1;
+}
+
+#apropos-texte h2 {
+    color: #0057b8;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#apropos-texte p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#apropos-liste {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+#apropos-liste li {
+    padding: 8px 0;
+    color: #333;
+    font-weight: 500;
+}
+
+#apropos-image {
+    flex: 1;
+}
+
+#apropos-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 87, 184, 0.2);
+}
+
+/* ================================
+   CARDS
+================================ */
 .cards {
     display: flex;
     justify-content: center;
@@ -271,7 +280,14 @@ section {
     text-decoration: underline;
 }
 
-/* CARROUSEL */
+.card-icon {
+    font-size: 3rem;
+    margin: 25px auto 15px;
+}
+
+/* ================================
+   CARROUSEL
+================================ */
 #carrousel {
     background: #e8f1fb;
     padding: 60px 20px;
@@ -342,79 +358,20 @@ section {
     background: #0057b8;
 }
 
-/* FOOTER */
-footer {
-    background: #0057b8;
-    color: white;
-    padding: 30px;
-    text-align: center;
+/* ================================
+   FORMATIONS
+================================ */
+#liste-formations {
+    background: #f8fbff;
 }
 
-footer nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+#liste-formations h2 {
     margin-bottom: 10px;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* BURGER */
-#menu-toggle {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #hero-content h2 {
-        font-size: 2rem;
-    }
-
-    #hero-img {
-        height: 350px;
-    }
-
-    #menu-toggle {
-        display: block;
-        margin: 10px auto;
-    }
-
-    #nav-menu {
-        display: none;
-        flex-direction: column;
-    }
-
-    #nav-menu.active {
-        display: flex;
-    }
-
-    #prev { left: 0; }
-    #next { right: 0; }
-
-    .card {
-        width: 100%;
-        max-width: 340px;
-    }
-}
-/*CSS
-/* TABLEAU */
+/* ================================
+   TABLEAU
+================================ */
 #matieres {
     background: white;
 }
@@ -449,15 +406,9 @@ tbody tr:hover {
     background: #e8f1fb;
 }
 
-/* LISTE FORMATIONS */
-#liste-formations {
-    background: #f8fbff;
-}
-
-#liste-formations h2 {
-    margin-bottom: 10px;
-}
-/* EQUIPE */
+/* ================================
+   EQUIPE
+================================ */
 #liste-equipe {
     background: #f8fbff;
 }
@@ -507,13 +458,10 @@ tbody tr:hover {
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
-/*VIE DU DÉPARTEMENT*/
-.nav-active {
-    border-bottom: 2px solid #0057b8;
-    padding-bottom: 3px;
-}
 
-/* POP-UP */
+/* ================================
+   VIE DU DÉPARTEMENT - POPUP
+================================ */
 #popup-overlay {
     position: fixed;
     inset: 0;
@@ -584,7 +532,9 @@ tbody tr:hover {
     to { transform: scale(1); opacity: 1; }
 }
 
-/* ===== HERO ===== */
+/* ================================
+   VIE DU DÉPARTEMENT - HERO
+================================ */
 #vie-hero {
     background: linear-gradient(135deg, #0057b8 0%, #003f8a 60%, #001f4d 100%);
     color: white;
@@ -617,7 +567,9 @@ tbody tr:hover {
     opacity: 0.85;
 }
 
-/* ===== COMPTEURS ===== */
+/* ================================
+   VIE DU DÉPARTEMENT - COMPTEURS
+================================ */
 #compteurs {
     background: white;
     padding: 60px 20px;
@@ -664,7 +616,9 @@ tbody tr:hover {
     letter-spacing: 0.5px;
 }
 
-/*  ÉVÉNEMENTS  */
+/* ================================
+   VIE DU DÉPARTEMENT - ÉVÉNEMENTS
+================================ */
 #evenements {
     background: #f8fbff;
     padding: 70px 20px;
@@ -689,7 +643,6 @@ tbody tr:hover {
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 87, 184, 0.1);
     display: flex;
-    gap: 0;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -754,7 +707,9 @@ tbody tr:hover {
     letter-spacing: 0.5px;
 }
 
-/*  QUIZ  */
+/* ================================
+   VIE DU DÉPARTEMENT - QUIZ
+================================ */
 #quiz-section {
     background: linear-gradient(135deg, #0057b8, #003f8a);
     padding: 70px 20px;
@@ -858,7 +813,6 @@ tbody tr:hover {
     cursor: default;
 }
 
-/* Résultat */
 #quiz-result {
     text-align: center;
     padding: 10px 0;
@@ -887,7 +841,9 @@ tbody tr:hover {
     margin-bottom: 25px;
 }
 
-/* ===== GALERIE ===== */
+/* ================================
+   VIE DU DÉPARTEMENT - GALERIE
+================================ */
 #galerie {
     background: white;
     padding: 70px 20px;
@@ -951,76 +907,63 @@ tbody tr:hover {
     font-size: 0.95rem;
 }
 
-/*  REPONSES */
-@media (max-width: 768px) {
-    #vie-hero-content h2 { font-size: 2rem; }
-    .compteur-item { min-width: 130px; padding: 25px 20px; }
-    .compteur-nombre { font-size: 2.2rem; }
-    .galerie-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-    .galerie-item.grand { grid-row: span 1; }
-    .events-grid { grid-template-columns: 1fr; }
-}
-/* APROPOS AMÉLIORÉ */
-#apropos-container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
+/* ================================
+   CONTACT
+================================ */
+#coordonnees {
+    background: white;
+    padding: 60px 20px;
 }
 
-#apropos-texte {
-    flex: 1;
-}
-
-#apropos-texte h2 {
+#coordonnees h2 {
     color: #0057b8;
     font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.coord-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coord-card {
+    background: #f0f6ff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    max-width: 250px;
+    border-top: 4px solid #0057b8;
+    transition: 0.3s;
+}
+
+.coord-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 87, 184, 0.15);
+}
+
+.coord-icon {
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
-#apropos-texte p {
+.coord-card h3 {
+    color: #0057b8;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.coord-card p {
     color: #555;
-    margin-bottom: 20px;
-    line-height: 1.8;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
-#apropos-liste {
-    list-style: none;
-    margin-bottom: 25px;
-}
-
-#apropos-liste li {
-    padding: 8px 0;
-    color: #333;
-    font-weight: 500;
-}
-
-#apropos-image {
-    flex: 1;
-}
-
-#apropos-image img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 87, 184, 0.2);
-}
-
-@media (max-width: 768px) {
-    #apropos-container {
-        flex-direction: column;
-    }
-}
-/* CARD ICON */
-.card-icon {
-    font-size: 3rem;
-    margin: 25px auto 15px;
-}
-/* CONTACT PAGE */
 #contact {
     background: white;
     max-width: 600px;
@@ -1091,16 +1034,6 @@ tbody tr:hover {
     font-size: 1rem;
 }
 
-/* APROPOS EQUIPE */
-#apropos-equipe {
-    background: #f8fbff;
-}
-
-#apropos-equipe p {
-    margin-bottom: 10px;
-    color: #555;
-}
-/* MAP */
 #map {
     background: #f8fbff;
     padding: 60px 20px;
@@ -1121,91 +1054,108 @@ tbody tr:hover {
     overflow: hidden;
 }
 
-/* CONTACT CONTAINER */
-#contact-container {
-    display: flex;
-    gap: 50px;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: left;
-    flex-wrap: wrap;
+#apropos-equipe {
+    background: #f8fbff;
 }
 
-#formulaire {
-    flex: 2;
-    min-width: 300px;
-}
-
-#infos-contact {
-    width: 100%;
-    margin-top: 40px;
-}
-
-#infos-contact h3 {
-    color: #0057b8;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.coord-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.coord-card {
-    background: #f0f6ff;
-    border-radius: 15px;
-    padding: 30px 25px;
-    text-align: center;
-    flex: 1;
-    min-width: 180px;
-    max-width: 250px;
-    border-top: 4px solid #0057b8;
-    transition: 0.3s;
-}
-
-.coord-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 87, 184, 0.15);
-}
-
-.coord-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.coord-card h3 {
-    color: #0057b8;
-    font-size: 1rem;
+#apropos-equipe p {
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.coord-card p {
     color: #555;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-/* COORDONNEES */
-#coordonnees {
-    background: white;
-    padding: 60px 20px;
 }
 
-#coordonnees h2 {
-    color: #0057b8;
-    font-size: 2rem;
-    margin-bottom: 35px;
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background: #0057b8;
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #hero-content h2 {
+        font-size: 2rem;
+    }
+
+    #hero-img {
+        height: 350px;
+    }
+
+    #prev { left: 0; }
+    #next { right: 0; }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    #apropos-container {
+        flex-direction: column;
+    }
+
+    #vie-hero-content h2 { font-size: 2rem; }
+
+    .compteur-item {
+        min-width: 130px;
+        padding: 25px 20px;
+    }
+
+    .compteur-nombre { font-size: 2.2rem; }
+
+    .galerie-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .galerie-item.grand { grid-row: span 1; }
+
+    .events-grid { grid-template-columns: 1fr; }
 }
